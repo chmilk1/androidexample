@@ -2,7 +2,8 @@
 <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent">
+    android:layout_width="match_parent"
+    android:id="@+id/rl">
 
     <TextView
         android:layout_width="254dp"
@@ -20,6 +21,17 @@
         android:text="MOLE"
         android:textSize="35dp"
         android:id="@+id/mole1">
+    </Button>
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="124dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/text"
+        android:layout_centerHorizontal="true"
+        android:text="Start"
+        android:textSize="30dp">
+
     </Button>
 
 </RelativeLayout>
