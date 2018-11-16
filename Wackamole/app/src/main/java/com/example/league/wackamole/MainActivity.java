@@ -99,15 +99,27 @@ public class MainActivity extends AppCompatActivity{
 
     private void endGame(){
         hideMoles();
+
         posTimer.cancel();
         gameTimer.cancel();
 
+        posTimer = new Timer();
+        gameTimer = new Timer();
+
         findViewById(R.id.timetext).setVisibility(View.INVISIBLE);
 
-        score = 0;
         secondsLeft = 20;
 
-        //findViewById(R.id.start).setVisibility(View.VISIBLE);
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                findViewById(R.id.start).setVisibility(View.VISIBLE);
+                TextView start = findViewById(R.id.text);
+                start.setText(getString(R.string.score) + score);
+            }
+        });
+
+        score = 0;
     }
 
     private void changeMolePos() {

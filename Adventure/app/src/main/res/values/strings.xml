@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Adventure</string>
+    <string name="storyA">engaging story a</string>
+    <string name="pathA_1">path a option 1</string>
+    <string name="pathA_2">path a option 2</string>
+    <string name="name_hint">Your Name</string>
+    <string name="startGame">START</string>
+</resources>
